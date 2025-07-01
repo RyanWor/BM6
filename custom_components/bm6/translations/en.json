@@ -49,7 +49,7 @@
     "options": {
         "step": {
             "init": {
-                "title": "Re -configuration of the BM6 monitor",
+                "title": "Re-configuration of the BM6 monitor",
                 "description": "Basic device configuration parameters.",
                 "data": {
                     "state_algorithm": "Battery calculation algorithm",
@@ -93,10 +93,10 @@
     "entity": {
         "sensor": {
             "voltage": {
-                "name": "Tension",
+                "name": "Voltage",
                 "state_attributes": {
                     "voltage_device": {
-                        "name": "Actual tension"
+                        "name": "Actual voltage"
                     },
                     "voltage_corrected": {
                         "name": "Corrected voltage"
@@ -118,7 +118,7 @@
                 }
             },
             "percentage": {
-                "name": "Percent",
+                "name": "Battery Level",
                 "state_attributes": {
                     "voltage_corrected": {
                         "name": "Corrected voltage"
@@ -161,41 +161,41 @@
                 }
             },
             "state": {
-                "name": "Stan",
+                "name": "Battery State",
                 "state": {
                     "unknown": "Unknown",
                     "ok": "OK",
                     "low_voltage": "Low voltage",
-                    "under_voltage": "Too low voltage",
-                    "charging": "Landing",
+                    "under_voltage": "Under voltage",
+                    "charging": "Charging",
                     "idle": "Idle",
-                    "discharging": "Unloading",
-                    "over_voltage": "Too high voltage"
+                    "discharging": "Discharging",
+                    "over_voltage": "Over voltage"
                 }
             },
             "rssi": {
-                "name": "Signal force (RSSI)"
+                "name": "Signal Strength (RSSI)"
             },
             "device_percentage": {
-                "name": "Percentage of the device"
+                "name": "Battery Level"
             },
             "device_state": {
-                "name": "Condition of the device",
+                "name": "Battery State",
                 "state": {
                     "unknown": "Unknown",
                     "ok": "OK",
                     "low_voltage": "Low voltage",
-                    "charging": "Landing"
+                    "charging": "Charging"
                 }
             },
             "rapid_acceleration": {
                 "name": "Acceleration"
             },
             "rapid_deceleration": {
-                "name": "Slowness"
+                "name": "Deceleration"
             },
             "bluetooth_scanner": {
-                "name": "Skaner Bluetooth"
+                "name": "Bluetooth proxy"
             }
         }
     },
